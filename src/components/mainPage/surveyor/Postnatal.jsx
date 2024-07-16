@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 
 const labelClass='block text-sm font-medium text-gray-700'
-const inputClass='mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm'
+const inputClass='mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm'
 
 
 const Postnatal = () => {
@@ -10,7 +10,7 @@ const Postnatal = () => {
     return (
             <div className="bg-gray-100 flex items-center justify-center min-h-screen">
                 <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-                    <h1 className="text-2xl font-bold mb-6 text-center">Postnatal Care Form</h1>
+                    <h1 className="text-2xl font-bold mb-6 text-center text-emerald-700">Postnatal Care Form</h1>
                     <form className="space-y-4">
                         <div>
                             <label htmlFor="visit-date" className={labelClass}>Visit Date</label>
@@ -38,7 +38,7 @@ const Postnatal = () => {
                         </div>
 
                         <div>
-                            <input type="submit" value="Submit" className="mt-4 w-full bg-blue-500 text-white p-2 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 cursor-pointer" />
+                            <input type="submit" value="Submit" className="mt-4 w-full bg-emerald-500 text-white p-2 rounded-md shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-50 cursor-pointer" />
                         </div>
                     </form>
                 </div>

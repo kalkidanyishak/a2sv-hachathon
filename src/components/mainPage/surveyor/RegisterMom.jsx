@@ -1,12 +1,12 @@
 const labelClass='block text-sm font-medium text-gray-700'
-const inputClass='mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm'
+const inputClass='mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm'
 
 const RegisterMother = () => {
     return (
         <>
             <div className="bg-gray-100 flex items-center justify-center min-h-screen">
                 <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
-                    <h1 className="text-2xl font-bold mb-6 text-center">Mother's Information Form</h1>
+                    <h1 className="text-2xl font-bold mb-6 text-center text-emerald-700">Mother's Information Form</h1>
                     <form className="space-y-4">
                         <div>
                             <label htmlFor="name" className={labelClass}>Name</label>
@@ -45,14 +45,14 @@ const RegisterMother = () => {
                         </div>
 
                         <div>
-                            <input type="submit" value="Submit" className="mt-4 w-full bg-blue-500 text-white p-2 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 cursor-pointer" />
+                            <input type="submit" value="Submit" className="mt-4 w-full bg-emerald-500 text-white p-2 rounded-md shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-50 cursor-pointer" />
                         </div>
                     </form>
                 </div>
             </div>
             <div className="bg-gray-100 flex items-center justify-center min-h-screen">
                 <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
-                    <h1 className="text-2xl font-bold mb-6 text-center">Obstetric History Form</h1>
+                    <h1 className="text-2xl font-bold mb-6 text-center text-emerald-700">Obstetric History Form</h1>
                     <form className="space-y-4">
                         <div>
                             <label htmlFor="previous-pregnancies" className={labelClass}>Previous Pregnancies</label>
@@ -91,7 +91,7 @@ const RegisterMother = () => {
 
 
                         <div>
-                            <input type="submit" value="Submit" className="mt-4 w-full bg-blue-500 text-white p-2 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 cursor-pointer" />
+                            <input type="submit" value="Submit" className="mt-4 w-full bg-emerald-500 text-white p-2 rounded-md shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-50 cursor-pointer" />
                         </div>
                     </form>
                 </div>
@@ -99,7 +99,7 @@ const RegisterMother = () => {
 
             <div className="bg-gray-100 flex items-center justify-center min-h-screen">
                 <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
-                    <h1 className="text-2xl font-bold mb-6 text-center">Labor Delivery Form</h1>
+                    <h1 className="text-2xl font-bold mb-6 text-center text-emerald-700">Labor Delivery Form</h1>
                     <form className="space-y-4">
                         <div>
                             <label htmlFor="delivery-date" className={labelClass}>Delivery Date</label>
@@ -142,7 +142,7 @@ const RegisterMother = () => {
                         </div>
 
                         <div>
-                            <input type="submit" value="Submit" className="mt-4 w-full bg-blue-500 text-white p-2 rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 cursor-pointer" />
+                            <input type="submit" value="Submit" className="mt-4 w-full bg-emerald-500 text-white p-2 rounded-md shadow-sm hover:bg-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-opacity-50 cursor-pointer" />
                         </div>
                     </form>
                 </div>

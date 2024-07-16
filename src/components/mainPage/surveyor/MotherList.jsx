@@ -14,7 +14,7 @@ const MotherList=()=>{
     return (
         <div className="p-6 bg-gray-100 min-h-screen">
         <div className="container mx-auto">
-          <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">
+          <h1 className="text-3xl font-bold mb-8 text-center text-emerald-700">
             {params.type} care
           </h1>
           <div className="space-y-4">
@@ -24,13 +24,13 @@ const MotherList=()=>{
                 to={`/${params.type}/${val.id}/${val.name}`}
                 className={({ isActive }) =>
                   `block bg-white p-4 rounded-lg shadow-md hover:bg-gray-50 transition duration-300 ease-in-out ${
-                    isActive ? 'bg-blue-100 text-blue-800' : 'text-gray-800'
+                    isActive ? 'bg-emerald-100 text-emerald-800' : 'text-gray-800'
                   }`
                 }
               >
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-medium">{val.name}</span>
-                  <span className="px-3 py-1 text-sm font-semibold text-blue-600 bg-blue-100 rounded-full">
+                  <span className="px-3 py-1 text-sm font-semibold text-emerald-600 bg-emerald-100 rounded-full">
                     View
                   </span>
                 </div>

@@ -5,12 +5,12 @@ const Register = () => {
     <>
     <div className="p-4 bg-gray-100 min-h-screen">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold mb-6">Register</h1>
+        <h1 className="text-3xl font-bold mb-6 text-emerald-700">Register</h1>
         <nav className="space-y-4">
           <NavLink 
             to="register-child" 
             className={({ isActive }) => 
-              `block text-blue-500 hover:text-blue-700 ${isActive ? 'font-bold' : ''}`
+              `block text-emerald-500 hover:text-emerald-700 ${isActive ? 'font-bold' : ''}`
             }
           >
             Register a child
@@ -18,7 +18,7 @@ const Register = () => {
           <NavLink 
             to="register-mother" 
             className={({ isActive }) => 
-              `block text-blue-500 hover:text-blue-700 ${isActive ? 'font-bold' : ''}`
+              `block text-emerald-500 hover:text-emerald-700 ${isActive ? 'font-bold' : ''}`
             }
           >
             Register a mother
@@ -30,7 +30,7 @@ const Register = () => {
           <NavLink 
             to="mother-list/antenatal" 
             className={({ isActive }) => 
-              `block text-blue-500 hover:text-blue-700 ${isActive ? 'font-bold' : ''}`
+              `block text-emerald-500 hover:text-emerald-700 ${isActive ? 'font-bold' : ''}`
             }
           >
             Antenatal
@@ -38,7 +38,7 @@ const Register = () => {
           <NavLink 
             to="mother-list/postnatal" 
             className={({ isActive }) => 
-              `block text-blue-500 hover:text-blue-700 ${isActive ? 'font-bold' : ''}`
+              `block text-emerald-500 hover:text-emerald-700 ${isActive ? 'font-bold' : ''}`
             }
           >
             Postnatal
@@ -46,7 +46,7 @@ const Register = () => {
           <NavLink 
             to="child-list" 
             className={({ isActive }) => 
-              `block text-blue-500 hover:text-blue-700 ${isActive ? 'font-bold' : ''}`
+              `block text-emerald-500 hover:text-emerald-700 ${isActive ? 'font-bold' : ''}`
             }
           >
             Infant health
