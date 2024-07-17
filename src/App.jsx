@@ -9,24 +9,40 @@ import ChildList from './components/mainPage/surveyor/ChildList'
 import Postnatal from './components/mainPage/surveyor/Postnatal'
 import Antenatal from './components/mainPage/surveyor/Antenatal'
 import InfantForm from './components/mainPage/surveyor/InfantForm'
+import AllowLocation from './components/mainPage/surveyor/AllowLocation'
+ import DashBoardRouting from './components/UserDashboard/DashBoardRouting'
+ import AnalizeWithAI from './components/UserDashboard/AnalizeWithAI'
+ import SurveyorAccounts from './components/UserDashboard/SurveyorAccounts'
+ import Oveview from './components/UserDashboard/Oveview'
 
 
 function App() {
   return (
     <>
-    <Routes>
-      <Route path='/' element={<MainPage/>} />
-      <Route path='/surveyor' >
-        <Route index element={<Register/>}/>
-        <Route path='register-child' element={<RegisterChild/>} />
-        <Route path='register-mother' element={<RegisterMother/>} />
-        <Route path='mother-list/:type' element={<MotherList/>} />
-        <Route path='child-list' element={<ChildList/>} />
-      </Route>
-      <Route path='postnatal/:id/:name' element={<Postnatal/>} />
-      <Route path='antenatal/:id/:name' element={<Antenatal/>} />
-      <Route path='infant-form/:id/:name' element={<InfantForm/>}/>
-    </Routes>
+      <Routes>
+
+        <Route path='/' element={<MainPage />} />
+        <Route path='/location' element={<AllowLocation />} />
+
+        <Route path='/surveyor' >
+          <Route index element={<Register />} />
+          <Route path='register-child' element={<RegisterChild />} />
+          <Route path='register-mother' element={<RegisterMother />} />
+          <Route path='mother-list/:type' element={<MotherList />} />
+          <Route path='child-list' element={<ChildList />} />
+        </Route>
+
+        <Route path='postnatal/:id/:name' element={<Postnatal />} />
+        <Route path='antenatal/:id/:name' element={<Antenatal />} />
+        <Route path='infant-form/:id/:name' element={<InfantForm />} />
+
+         <Route path='/dashboard'>
+          <Route index element={<Oveview />} />
+          <Route path='surveyors' element={<SurveyorAccounts />} />
+          <Route path='analyze' element={<AnalizeWithAI />} />
+        </Route> 
+
+      </Routes>
 
     </>
   )

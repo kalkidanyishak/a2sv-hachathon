@@ -7,11 +7,11 @@ import AnalizeWithAI from './AnalizeWithAI'
 const DashBoardRouting = () => {
   return (
     <div>
-        <Routes>
+        {/* <Routes>
             <Route path='/' element={<Oveview/>}/>
             <Route path='/surveyors' element={<SurveyorAccounts/>}/>
             <Route path='/analyze' element={<AnalizeWithAI/>}/>
-        </Routes>
+        </Routes> */}
     </div>
   )
 }

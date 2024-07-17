@@ -41,6 +41,7 @@ const RegisterChild = () => {
                     </form>
                 </div>
             </div>
+            
             <div className="bg-gray-100 flex items-center justify-center min-h-screen">
                 <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
                     <h1 className="text-2xl font-bold mb-6 text-center text-emerald-700">Neonatal Health Form</h1>

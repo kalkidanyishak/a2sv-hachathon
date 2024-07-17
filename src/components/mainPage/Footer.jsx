@@ -16,7 +16,7 @@ const Footer = () => {
           </address>
           <h3 className="mt-14 text-xl text-black max-md:mt-10">Newsletter</h3>
           <form className="mt-8">
-            <label htmlhtmlFor="email" className="sr-only">
+            <label htmlFor="email" className="sr-only">
               Input your email
             </label>
             <div className="flex gap-5">
