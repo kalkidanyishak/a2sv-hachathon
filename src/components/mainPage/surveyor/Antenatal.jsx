@@ -17,12 +17,12 @@ const Antenatal = () => {
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     <div>
                         <label htmlFor="visit-date" className={styles.labelClass}>Visit Date</label>
-                        <input type="date" id="visit-date" name="visit-date" required className={styles.inputClass} {...register('visitDate')} />
+                        <input type="date" id="visit-date" name="visit-date" required className={styles.inputClass} {...register('visit_date')} />
                     </div>
 
                     <div>
                         <label htmlFor="blood-pressure" className={styles.labelClass}>Blood Pressure</label>
-                        <input type="text" id="blood-pressure" name="blood-pressure" placeholder="e.g., 120/80" required className={styles.inputClass} {...register('bloodPressure')} />
+                        <input type="text" id="blood-pressure" name="blood-pressure" placeholder="e.g., 120/80" required className={styles.inputClass} {...register('blood_pressure')} />
                     </div>
 
                     <div>
@@ -37,7 +37,7 @@ const Antenatal = () => {
 
                     <div>
                         <label htmlFor="screening-results" className={styles.labelClass}>Screening Results</label>
-                        <textarea id="screening-results" name="screening-results" rows="4" cols="50" required className={styles.textareaClass} {...register('screeningResults')} />
+                        <textarea id="screening-results" name="screening-results" rows="4" cols="50" required className={styles.textareaClass} {...register('screening_results')} />
                     </div>
 
                     <div>

@@ -24,7 +24,7 @@ const MomInfo = () => {
 
                     <div>
                         <label htmlFor="marital-status" className={styles.labelClass}>Marital Status</label>
-                        <select id="marital-status" name="marital-status" required className={styles.inputClass} {...register('marital-status')}>
+                        <select id="marital-status" name="marital-status" required className={styles.inputClass} {...register('marital_status')}>
                             <option value="">Select...</option>
                             <option value="single">Single</option>
                             <option value="married">Married</option>
@@ -35,12 +35,12 @@ const MomInfo = () => {
 
                     <div>
                         <label htmlFor="education-level" className={styles.labelClass}>Education Level</label>
-                        <input type="text" id="education-level" name="education-level" required className={styles.inputClass} {...register('education-level')} />
+                        <input type="text" id="education-level" name="education-level" required className={styles.inputClass} {...register('education_level')} />
                     </div>
 
                     <div>
                         <label htmlFor="socioeconomic-status" className={styles.labelClass}>Socioeconomic Status</label>
-                        <input type="text" id="socioeconomic-status" name="socioeconomic-status" required className={styles.inputClass} {...register('socioeconomic-status')} />
+                        <input type="text" id="socioeconomic-status" name="socioeconomic-status" required className={styles.inputClass} {...register('socioeconomic_status')} />
                     </div>
 
                     <div>

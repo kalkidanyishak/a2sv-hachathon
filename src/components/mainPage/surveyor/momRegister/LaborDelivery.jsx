@@ -13,17 +13,17 @@ const LaborDelivery = () => {
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     <div>
                         <label htmlFor="delivery-date" className={styles.labelClass}>Delivery Date</label>
-                        <input type="date" id="delivery-date" name="delivery-date" required className={styles.inputClass} {...register('delivery-date')} />
+                        <input type="date" id="delivery-date" name="delivery-date" required className={styles.inputClass} {...register('delivery_date')} />
                     </div>
 
                     <div>
                         <label htmlFor="place-of-delivery" className={styles.labelClass}>Place of Delivery</label>
-                        <input type="text" id="place-of-delivery" name="place-of-delivery" required className={styles.inputClass} {...register('place-of-delivery')} />
+                        <input type="text" id="place-of-delivery" name="place-of-delivery" required className={styles.inputClass} {...register('place_of_delivery')} />
                     </div>
 
                     <div>
                         <label htmlFor="type-of-delivery" className={styles.labelClass}>Type of Delivery</label>
-                        <select id="type-of-delivery" name="type-of-delivery" required className={styles.inputClass} {...register('type-of-delivery')}>
+                        <select id="type-of-delivery" name="type-of-delivery" required className={styles.inputClass} {...register('type_of_delivery')}>
                             <option value="">Select...</option>
                             <option value="vaginal">Vaginal</option>
                             <option value="cesarean">Cesarean</option>
@@ -33,7 +33,7 @@ const LaborDelivery = () => {
 
                     <div>
                         <label htmlFor="birth-attendant" className={styles.labelClass}>Birth Attendant</label>
-                        <input type="text" id="birth-attendant" name="birth-attendant" required className={styles.inputClass} {...register('birth-attendant')} />
+                        <input type="text" id="birth-attendant" name="birth-attendant" required className={styles.inputClass} {...register('birth_attendant')} />
                     </div>
 
                     <div>

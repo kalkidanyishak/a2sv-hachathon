@@ -18,7 +18,7 @@ const InfantForm = () => {
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div>
             <label htmlFor="checkup-date" className={styles.labelClass}>Checkup Date</label>
-            <input type="date" id="checkup-date" name="checkup-date" required className={styles.inputClass} {...register('checkupDate')} />
+            <input type="date" id="checkup-date" name="checkup-date" required className={styles.inputClass} {...register('checkup_date')} />
           </div>
 
           <div>
@@ -33,12 +33,12 @@ const InfantForm = () => {
 
           <div>
             <label htmlFor="head-circumference" className={styles.labelClass}>Head Circumference (cm)</label>
-            <input type="number" id="head-circumference" name="head-circumference" step="0.1" required className={styles.inputClass} {...register('headCircumference')} />
+            <input type="number" id="head-circumference" name="head-circumference" step="0.1" required className={styles.inputClass} {...register('head_circumference')} />
           </div>
 
           <div>
             <label htmlFor="developmental-milestone" className={styles.labelClass}>Developmental Milestone</label>
-            <textarea id="developmental-milestone" name="developmental-milestone" rows="4" cols="50" required className={styles.inputClass} {...register('developmentalMilestone')} />
+            <textarea id="developmental-milestone" name="developmental-milestone" rows="4" cols="50" required className={styles.inputClass} {...register('developmental_milestone')} />
           </div>
 
           <div>

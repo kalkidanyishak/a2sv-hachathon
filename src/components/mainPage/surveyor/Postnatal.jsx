@@ -18,17 +18,17 @@ const Postnatal = () => {
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     <div>
                         <label htmlFor="visit-date" className={styles.labelClass}>Visit Date</label>
-                        <input type="date" id="visit-date" name="visit-date" required className={styles.inputClass} {...register('visitDate')} />
+                        <input type="date" id="visit-date" name="visit-date" required className={styles.inputClass} {...register('visit_date')} />
                     </div>
 
                     <div>
                         <label htmlFor="health-assessment" className={styles.labelClass}>Health Assessment</label>
-                        <textarea id="health-assessment" name="health-assessment" rows="4" cols="50" required className={styles.inputClass} {...register('healthAssessment')} />
+                        <textarea id="health-assessment" name="health-assessment" rows="4" cols="50" required className={styles.inputClass} {...register('health_assessment')} />
                     </div>
 
                     <div>
                         <label htmlFor="breastfeeding-support" className={styles.labelClass}>Breastfeeding Support</label>
-                        <textarea id="breastfeeding-support" name="breastfeeding-support" rows="4" cols="50" required className={styles.inputClass} {...register('breastfeedingSupport')} />
+                        <textarea id="breastfeeding-support" name="breastfeeding-support" rows="4" cols="50" required className={styles.inputClass} {...register('breastfeeding_support')} />
                     </div>
 
 

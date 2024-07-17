@@ -26,13 +26,27 @@ const ChildInfoForm = () => {
                     <div>
                         <label htmlFor="birth-weight" className={styles.labelClass}>Birth Weight (kg)</label>
                         <input type="number" id="birth-weight" name="birth-weight" step="0.1" required className={styles.inputClass} 
-                        {...register('birth-weight')}/>
+                        {...register('birth_weight')}/>
+                    </div>
+                    <div>
+                        <label htmlFor="birth-length" className={styles.labelClass}>Birth length (kg)</label>
+                        <input type="number" id="birth-length" name="birth-length" step="0.1" required className={styles.inputClass} 
+                        {...register('birth_length')}/>
                     </div>
 
                     <div>
                         <label htmlFor="mother" className={styles.labelClass}>Mother's Name</label>
                         <input type="text" id="mother" name="mother" required className={styles.inputClass} 
                         {...register('mother')}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="gender" className={styles.labelClass}>Type of Delivery</label>
+                        <select id="gender" name="gender" required className={styles.inputClass} {...register('gender')}>
+                            <option value="">Select...</option>
+                            <option value="vaginal">Male</option>
+                            <option value="cesarean">Female</option>
+                        </select>
                     </div>
 
                     <div>
