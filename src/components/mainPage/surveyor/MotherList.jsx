@@ -10,7 +10,7 @@ let mothers=[
 ]
 const MotherList=()=>{
     const params=useParams()
-    console.log(params)
+
     return (
         <div className="p-6 bg-gray-100 min-h-screen">
         <div className="container mx-auto">
