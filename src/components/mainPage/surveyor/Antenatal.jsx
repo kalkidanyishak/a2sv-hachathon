@@ -32,7 +32,7 @@ const Antenatal = () => {
 
                     <div>
                         <label htmlFor="hemoglobin" className={styles.labelClass}>Hemoglobin Level (g/dL)</label>
-                        <input type="number" id="hemoglobin" name="hemoglobin" step="0.1" required className={styles.inputClass} {...register('hemoglobin')} />
+                        <input type="number" id="hemoglobin" name="hemoglobin" step="0.1" required className={styles.inputClass} {...register('hemoglobin_level')} />
                     </div>
 
                     <div>

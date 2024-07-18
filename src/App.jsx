@@ -14,11 +14,16 @@ import AllowLocation from './components/mainPage/surveyor/AllowLocation'
  import AnalizeWithAI from './components/UserDashboard/AnalizeWithAI'
  import SurveyorAccounts from './components/UserDashboard/SurveyorAccounts'
  import Oveview from './components/UserDashboard/Oveview'
+ import {QueryClientProvider, QueryClient} from 'react-query'
+
+ const queryClient=new QueryClient()
 
 
 function App() {
   return (
     <>
+        <QueryClientProvider client={queryClient}>
+
       <Routes>
 
         <Route path='/' element={<MainPage />} />
@@ -43,7 +48,7 @@ function App() {
         </Route> 
 
       </Routes>
-
+      </QueryClientProvider>
     </>
   )
 }

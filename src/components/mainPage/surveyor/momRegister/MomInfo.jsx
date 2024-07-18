@@ -42,6 +42,10 @@ const MomInfo = () => {
                         <label htmlFor="socioeconomic-status" className={styles.labelClass}>Socioeconomic Status</label>
                         <input type="text" id="socioeconomic-status" name="socioeconomic-status" required className={styles.inputClass} {...register('socioeconomic_status')} />
                     </div>
+                    <div>
+                        <label htmlFor="occupation" className={styles.labelClass}>occupation</label>
+                        <input type="text" id="occupation" name="occupation" required className={styles.inputClass} {...register('occupation')} />
+                    </div>
 
                     <div>
                         <label htmlFor="residence" className={styles.labelClass}>Residence</label>

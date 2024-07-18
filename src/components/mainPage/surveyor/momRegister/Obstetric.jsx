@@ -13,12 +13,12 @@ const Obstetric = () => {
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     <div>
                         <label htmlFor="previous-pregnancies" className={styles.labelClass}>Previous Pregnancies</label>
-                        <input type="number" id="previous-pregnancies" name="previous-pregnancies" required className={styles.inputClass} {...register('previousPregnancies')} />
+                        <input type="number" id="previous-pregnancies" name="previous-pregnancies" required className={styles.inputClass} {...register('previous_pregnancies')} />
                     </div>
 
                     <div>
                         <label htmlFor="live-births" className={styles.labelClass}>Live Births</label>
-                        <input type="number" id="live-births" name="live-births" required className={styles.inputClass} {...register('liveBirths')} />
+                        <input type="number" id="live-births" name="live-births" required className={styles.inputClass} {...register('live_births')} />
                     </div>
 
                     <div>
@@ -35,9 +35,6 @@ const Obstetric = () => {
                         <label htmlFor="complications" className={styles.labelClass}>Complications</label>
                         <textarea id="complications" name="complications" rows="4" required className={styles.inputClass} {...register('complications')} />
                     </div>
-
-
-
                     <div>
                         <label htmlFor="mother" className={styles.labelClass}>Mother's Name</label>
                         <input type="text" id="mother" name="mother" required className={styles.inputClass} {...register('mother')} />

@@ -38,12 +38,12 @@ const InfantForm = () => {
 
           <div>
             <label htmlFor="developmental-milestone" className={styles.labelClass}>Developmental Milestone</label>
-            <textarea id="developmental-milestone" name="developmental-milestone" rows="4" cols="50" required className={styles.inputClass} {...register('developmental_milestone')} />
+            <textarea id="developmental-milestone" name="developmental-milestone" rows="4" cols="50" required className={styles.inputClass} {...register('developmental_milestones')} />
           </div>
 
           <div>
             <label htmlFor="immunization" className={styles.labelClass}>Immunization</label>
-            <textarea id="immunization" name="immunization" rows="4" cols="50" required className={styles.inputClass} {...register('immunization')} />
+            <textarea id="immunization" name="immunization" rows="4" cols="50" required className={styles.inputClass} {...register('immunizations')} />
           </div>
 
           <div>

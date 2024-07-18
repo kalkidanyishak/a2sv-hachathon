@@ -1,9 +1,19 @@
 import { useForm } from "react-hook-form"
 import FormWrapper from "../ui/FormWrapper"
+import { useMutation } from "react-query";
+import { postData } from "../../../hooks/useDjango";
 
 const ChildInfoForm = () => {
+    const mutation = useMutation((newComplaint)=>postData('children/children/',newComplaint), {
+      onSuccess: () => {
+        // Invalidate and refetch
+        console.log('done')
+      },
+    });
+
     const {register, handleSubmit}=useForm()
     const onSubmit=(data)=>{
+        mutation.mutate({...data, surveyor:1})
         console.log('form submitted', data)
     }
     return (
@@ -20,7 +30,7 @@ const ChildInfoForm = () => {
                     <div>
                         <label htmlFor="dob" className={styles.labelClass}>Date of Birth</label>
                         <input type="date" id="dob" name="dob" required className={styles.inputClass} 
-                        {...register('dob')}/>
+                        {...register('date_of_birth')}/>
                     </div>
 
                     <div>
@@ -41,7 +51,7 @@ const ChildInfoForm = () => {
                     </div>
                     
                     <div>
-                        <label htmlFor="gender" className={styles.labelClass}>Type of Delivery</label>
+                        <label htmlFor="gender" className={styles.labelClass}>Gender</label>
                         <select id="gender" name="gender" required className={styles.inputClass} {...register('gender')}>
                             <option value="">Select...</option>
                             <option value="vaginal">Male</option>

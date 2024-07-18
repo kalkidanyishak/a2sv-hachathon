@@ -18,7 +18,7 @@ const Neonatal = () => {
 
                     <div>
                         <label htmlFor="newborn-screening" className={styles.labelClass}>Newborn Screening Results</label>
-                        <textarea id="newborn-screening" name="newborn-screening" rows="4" cols="50" required className={styles.inputClass} {...register('newborn_screening')} />
+                        <textarea id="newborn-screening" name="newborn-screening" rows="4" cols="50" required className={styles.inputClass} {...register('newborn_screening_results')} />
                     </div>
 
                     <div>
