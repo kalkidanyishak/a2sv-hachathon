@@ -18,6 +18,10 @@ import AllowLocation from './components/mainPage/surveyor/AllowLocation'
 
  const queryClient=new QueryClient()
 
+import UserDashboard from './components/UserDashboard/UserDashboard'
+import Signin from './components/AuthPages/Signin';
+import Signup from './components/AuthPages/Signup';
+
 
 function App() {
   return (
@@ -28,6 +32,8 @@ function App() {
 
         <Route path='/' element={<MainPage />} />
         <Route path='/location' element={<AllowLocation />} />
+        <Route path='/signin' element={<Signin/>}/>
+        <Route path='/signup' element={<Signup/>}/>
 
         <Route path='/surveyor' >
           <Route index element={<Register />} />
@@ -40,12 +46,9 @@ function App() {
         <Route path='postnatal/:id/:name' element={<Postnatal />} />
         <Route path='antenatal/:id/:name' element={<Antenatal />} />
         <Route path='infant-form/:id/:name' element={<InfantForm />} />
+        <Route path='/user/*' element={<UserDashboard/>}/>
 
-         <Route path='/dashboard'>
-          <Route index element={<Oveview />} />
-          <Route path='surveyors' element={<SurveyorAccounts />} />
-          <Route path='analyze' element={<AnalizeWithAI />} />
-        </Route> 
+         
 
       </Routes>
       </QueryClientProvider>
