@@ -3,12 +3,16 @@ import "./UserDashboard.css";
 import DashBoardRouting from "./DashBoardRouting";
 import { NavLink } from "react-router-dom";
 import { IoSettingsOutline } from "react-icons/io5";
+
+
 const UserDashboard = () => {
     const [clicked, setClicked] = useState("");
 
     const handleNavClick = (nav) =>{
         setClicked(nav);
     }
+
+    
   return (
     <div>
       <header class="sticky top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-[48] w-full bg-white border-b text-sm py-2.5 sm:py-4 lg:ps-64">
@@ -19,7 +23,7 @@ const UserDashboard = () => {
           <div class="me-5 lg:me-0 lg:hidden">
             <a
               class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-              href="../templates/admin/index.html"
+              href="/"
               aria-label="Preline"
             >
               <p className="text-xl font-medium"> LittleLives</p>
@@ -294,7 +298,7 @@ const UserDashboard = () => {
         <div class="px-8 pt-4">
           <a
             class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-            href="../templates/admin/index.html"
+            href="/"
             aria-label="Preline"
           >
             <p className="text-3xl font-semibold">LittleLives</p>
@@ -307,7 +311,7 @@ const UserDashboard = () => {
         >
           <ul class="space-y-1.5">
             <li onClick={() =>handleNavClick("")}>
-              <NavLink to="/">
+              <NavLink to="/user">
                 <a
                   class={`flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-neutral-700 rounded-lg hover:bg-gray-100 ${clicked == ""?"bg-gray-100": ""}`}
                   href="#"
@@ -333,7 +337,7 @@ const UserDashboard = () => {
             </li>
 
             <li class="hs-accordion" id="users-accordion" onClick={() => handleNavClick("surveyors")}>
-              <NavLink to="/surveyors">
+              <NavLink to="/user/surveyors">
                 <button
                   type="button"
                   class={`hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-neutral-700 rounded-lg hover:bg-gray-100 ${clicked == "surveyors"?"bg-gray-100": ""}`}
@@ -361,7 +365,7 @@ const UserDashboard = () => {
             </li>
 
             <li class="hs-accordion" id="projects-accordion" onClick={()=> handleNavClick("analyze")}>
-              <NavLink to="analyze">
+              <NavLink to="/user/analyze">
                 <button
                   type="button"
                   class={`hs-accordion-toggle w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-neutral-700 rounded-lg hover:bg-gray-100 ${clicked == "analyze"?"bg-gray-100": ""}`}
